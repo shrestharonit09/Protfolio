@@ -18,7 +18,6 @@ const App = () => {
     // </div>
     <div>
     <Routing/>
-  
     </div>
   );
 };
