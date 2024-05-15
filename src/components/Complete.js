@@ -1,6 +1,5 @@
 import React from "react";
 import Home from "./Home";
-import Navbar from "./Navbar";
 import Tech from "./Tech";
 import Project from "./Project";
 import Information from "./Information";

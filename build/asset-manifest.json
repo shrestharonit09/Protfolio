@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e6c13ad2.css",
+    "main.js": "/static/js/main.8d445ec2.js",
+    "static/js/453.235e154e.chunk.js": "/static/js/453.235e154e.chunk.js",
+    "static/media/Ronit.png": "/static/media/Ronit.844e5f3085af418cbd5d.png",
+    "static/media/SaasLogo.svg": "/static/media/SaasLogo.8ee46a7fb6d67fbe11e9f28287a0480d.svg",
+    "static/media/ReactLogo.svg": "/static/media/ReactLogo.d3acb7b014b163630295624ae4255f63.svg",
+    "static/media/VscodeLogo.svg": "/static/media/VscodeLogo.89a29435296aa5bb57f90fac97f66b83.svg",
+    "static/media/C++Logo.svg": "/static/media/C++Logo.a776a608546a79750b150829bc9b099e.svg",
+    "static/media/BootstrapLogo.svg": "/static/media/BootstrapLogo.8a314241db42312360e65bf17c3a3b32.svg",
+    "static/media/JsLogo.svg": "/static/media/JsLogo.6bc654a6f228b35379d6224ad01fe7ca.svg",
+    "static/media/PythonLogo.svg": "/static/media/PythonLogo.e6d7dc739a91892bbf1f6262412046dd.svg",
+    "static/media/GitLogo.svg": "/static/media/GitLogo.69e9588433f92b2522c871c96a38124e.svg",
+    "static/media/GithubLogo.svg": "/static/media/GithubLogo.1bb86cd73751b695a74942ab37ecf4ca.svg",
+    "static/media/CssLogo.svg": "/static/media/CssLogo.a84a8879a368c142e9851f85521887fe.svg",
+    "static/media/HtmlLogo.svg": "/static/media/HtmlLogo.e36951cb785f526090f35ff37aaae3f3.svg",
+    "static/media/TailwindcssLogo.svg": "/static/media/TailwindcssLogo.941bd53345996af6eae57658c8bffd9f.svg",
+    "index.html": "/index.html",
+    "main.e6c13ad2.css.map": "/static/css/main.e6c13ad2.css.map",
+    "main.8d445ec2.js.map": "/static/js/main.8d445ec2.js.map",
+    "453.235e154e.chunk.js.map": "/static/js/453.235e154e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.8d445ec2.js"
+  ]
+}
