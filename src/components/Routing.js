@@ -13,7 +13,7 @@ const Routing = () => {
     <div className="h-auto bg-gray-100 ">
       <Router>
         <Navbar/>
-        <div className="md:mt-20 ">
+        <div className="mt-32 ">
         <Routes>
           <Route path="/" element={<Complete />}></Route>
           <Route path="/home" element={<Home />}></Route>

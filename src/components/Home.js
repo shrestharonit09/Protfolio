@@ -3,7 +3,7 @@ import Picture from "../pictures/Ronit.png";
 
 const Home = () => {
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center mt-10">
       <div className="flex flex-col sm:flex-row sm:justify-between md:flex-row md:justify-between w-[80vw]">
         <div>
           <div className="flex flex-col gap-3 py-5">

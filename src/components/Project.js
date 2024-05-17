@@ -11,7 +11,7 @@ export const student = [
   {
     title: "Laptop Price Prediction",
     description:
-      " This project introduces a re ned machine learning approachto unravel the complexities of laptop pricing, leveraging theDecision Tree algorithm within a singular, powerful predictive model. Orchestrated through a Flask backend and a React frontend, the system offers a streamlined, user-friendly platform that not only predicts with precision but also providesa gateway to market insights. Culminating in an intuitive interface, the project stands as a testament to the potential of machine learning in enhancing market analysis and decision making in e-commerce spheres.",
+      " This project introduces a refined machine learning approachto unravel the complexities of laptop pricing, leveraging theDecision Tree algorithm within a singular, powerful predictive model. Orchestrated through a Flask backend and a React frontend, the system offers a streamlined, user-friendly platform that not only predicts with precision but also providesa gateway to market insights. Culminating in an intuitive interface, the project stands as a testament to the potential of machine learning in enhancing market analysis and decision making in e-commerce spheres.",
     image:
       "https://raw.githubusercontent.com/shrestharonit09/ImageFolders/master/Laptop%20Price%20Prediction.png",
   },
@@ -25,7 +25,7 @@ export const student = [
   {
     title: "Laptop Price Prediction",
     description:
-      " This project introduces a re ned machine learning approachto unravel the complexities of laptop pricing, leveraging theDecision Tree algorithm within a singular, powerful predictive model. Orchestrated through a Flask backend and a React frontend, the system offers a streamlined, user-friendly platform that not only predicts with precision but also providesa gateway to market insights. Culminating in an intuitive interface, the project stands as a testament to the potential of machine learning in enhancing market analysis and decision making in e-commerce spheres.",
+      " This project introduces a refined machine learning approachto unravel the complexities of laptop pricing, leveraging theDecision Tree algorithm within a singular, powerful predictive model. Orchestrated through a Flask backend and a React frontend, the system offers a streamlined, user-friendly platform that not only predicts with precision but also providesa gateway to market insights. Culminating in an intuitive interface, the project stands as a testament to the potential of machine learning in enhancing market analysis and decision making in e-commerce spheres.",
     image:
       "https://raw.githubusercontent.com/shrestharonit09/ImageFolders/master/Laptop%20Price%20Prediction.png",
   },
@@ -39,7 +39,7 @@ export const student = [
   {
     title: "Laptop Price Prediction",
     description:
-      " This project introduces a re ned machine learning approachto unravel the complexities of laptop pricing, leveraging theDecision Tree algorithm within a singular, powerful predictive model. Orchestrated through a Flask backend and a React frontend, the system offers a streamlined, user-friendly platform that not only predicts with precision but also providesa gateway to market insights. Culminating in an intuitive interface, the project stands as a testament to the potential of machine learning in enhancing market analysis and decision making in e-commerce spheres.",
+      " This project introduces a refined machine learning approachto unravel the complexities of laptop pricing, leveraging theDecision Tree algorithm within a singular, powerful predictive model. Orchestrated through a Flask backend and a React frontend, the system offers a streamlined, user-friendly platform that not only predicts with precision but also providesa gateway to market insights. Culminating in an intuitive interface, the project stands as a testament to the potential of machine learning in enhancing market analysis and decision making in e-commerce spheres.",
     image:
       "https://raw.githubusercontent.com/shrestharonit09/ImageFolders/master/Laptop%20Price%20Prediction.png",
   },
@@ -50,15 +50,15 @@ const Project = () => {
     <div className="flex flex-col gap-20">
       <div className="flex flex-col gap-5 ">
         <div className="flex justify-center">
-          <h1 className="text-4xl font-bold text-blue-950">Projects</h1>
+          <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-blue-950">Projects</h1>
         </div>
 
         <div className="flex justify-center">
-          <h1 className="text-3xl text-gray-500">Things I have built so far</h1>
+          <h1 className="text-xl md:text-2xl lg:text-4xl text-gray-500">Things I have built so far</h1>
         </div>
       </div>
       <div className="flex justify-center">
-        <div className="w-[80vw] flex flex-wrap gap-12">
+        <div className="w-[80vw] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-5 md:gap-5 lg:gap-10">
           {student.map((item) => (
             <Card
               title={item.title}

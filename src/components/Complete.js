@@ -7,7 +7,7 @@ import Information from "./Information";
 const Complete = () => {
   return (
     <div>
-      <div className="flex flex-col gap-64 bg-gray-100 mt-48">
+      <div className="flex flex-col gap-64 bg-gray-100">
         <Home />
         <Tech />
         <Project />

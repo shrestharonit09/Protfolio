@@ -2,12 +2,11 @@ import React, { useState, useEffect } from "react";
 import { FaGithub } from "react-icons/fa";
 import { AiFillTwitterCircle } from "react-icons/ai";
 import { FaLinkedin } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Sidebar from "./Sidebar";
 
 const Navbar = () => {
   const [width, setWidth] = useState(window.innerWidth);
-  console.log(width)
 
   useEffect(() => {
     const handleResize = () => {
@@ -22,41 +21,51 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="flex justify-center">
-      <div className="flex  gap-2 md:gap-8 lg:gap-20 justify-between mt-12 w-[80vw] ">
+      <div className={`flex ${width>770?"justify-center":"justify-start"} bg-[#f3f4f6]`}>
         {width > 770 ? (
-          <>
+          <div className="flex justify-between bg-[#f3f4f6]  h-20  pt-8 w-[84vw] fixed">
             <div className="flex  gap-2 md:gap-10 lg:gap-20 p-1">
-              <Link
+              <NavLink 
                 to="/"
-                className="text-md text-gray-500 font-semibold hover:bg-gray-300 rounded-lg"
+                className={({ isActive }) =>
+                isActive ? "text-blue-400" : "text-md text-gray-500 font-semibold hover:bg-gray-300 rounded-lg"
+              }
               >
                 Home
-              </Link>
-              <Link
+              </NavLink>
+              <NavLink 
                 to="/home"
-                className="text-md text-gray-500 font-semibold hover:bg-gray-300 rounded-lg"
+                className={({ isActive }) =>
+                 isActive ? "text-blue-400" : "text-md text-gray-500 font-semibold hover:bg-gray-300 rounded-lg"
+              }
+                
               >
                 About
-              </Link>
-              <Link
+              </NavLink>
+              <NavLink 
                 to="/tech"
-                className="text-md text-gray-500 font-semibold hover:bg-gray-300 rounded-lg"
+                className={({ isActive }) =>
+                 isActive ? "text-blue-400" : "text-md text-gray-500 font-semibold hover:bg-gray-300 rounded-lg"
+              }
               >
                 TechStack
-              </Link>
-              <Link
+              </NavLink>
+              <NavLink 
                 to="/project"
-                className="text-md text-gray-500 font-semibold hover:bg-gray-300 rounded-lg"
+                className={({ isActive }) =>
+                 isActive ? "text-blue-400" : "text-md text-gray-500 font-semibold hover:bg-gray-300 rounded-lg"
+              }
               >
                 Projects
-              </Link>
-              <Link
+              </NavLink>
+              <NavLink 
                 to="/contact"
-                className="text-md text-gray-500 font-semibold hover:bg-gray-300 rounded-lg"
+                className={({ isActive }) =>
+                 isActive ? "text-blue-400" : "text-md text-gray-500 font-semibold hover:bg-gray-300 rounded-lg"
+              }
               >
                 Contact
-              </Link>
+              </NavLink>
             </div>
 
             <div className="flex justify-end">
@@ -76,14 +85,13 @@ const Navbar = () => {
                 </div>
               </div>
             </div>
-          </>
+          </div>
         ) : (
-          <div className="py-2">
+          <div className="p-5">
             <Sidebar className="text-md" />
           </div>
         )}
       </div>
-    </div>
   );
 };
 
