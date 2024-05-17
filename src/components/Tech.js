@@ -39,7 +39,7 @@ const Tech = () => {
             </div>
 
             <div className="flex justify-center">
-              <h1 className="text-xl md:text-2xl lg:text-4xl text-gray-500">
+              <h1 className="text-lg md:text-2xl lg:text-4xl text-gray-500">
                 Technology I have been working with recently
               </h1>
             </div>

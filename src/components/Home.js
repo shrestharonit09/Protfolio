@@ -3,9 +3,9 @@ import Picture from "../pictures/Ronit.png";
 
 const Home = () => {
   return (
-    <div className="flex justify-center mt-10">
+    <div className="flex justify-center mt-10 ">
       <div className="flex flex-col sm:flex-row sm:justify-between md:flex-row md:justify-between w-[80vw]">
-        <div>
+        <div className="flex justify-center md:justify-start ">
           <div className="flex flex-col gap-3 py-5">
             <h1 className="font-bold text-3xl md:text-4xl lg:text-6xl text-blue-950">
               Hi👋,
@@ -22,7 +22,7 @@ const Home = () => {
             <h1 className="font-bold text-3xl md:text-4xl lg:text-6xl text-blue-950">I build things for web</h1>
           </div>
         </div>
-        <div>
+        <div className="flex justify-center md:justify-end">
           <img
             style={{ boxShadow: "0px 0px 20px 0px blue" }}
             className="h-44 md:h-60 lg:h-80  w-44 md:w-60 lg:w-80 rounded-full "
