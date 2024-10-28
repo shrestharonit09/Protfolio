@@ -21,77 +21,87 @@ const Navbar = () => {
   }, []);
 
   return (
-      <div className={`flex ${width>770?"justify-center":"justify-start"} bg-[#f3f4f6]`}>
-        {width > 770 ? (
-          <div className="flex justify-between bg-[#f3f4f6]  h-20  pt-8 w-[84vw] fixed">
-            <div className="flex  gap-2 md:gap-10 lg:gap-20 p-1">
-              <NavLink 
-                to="/"
-                className={({ isActive }) =>
-                isActive ? "text-blue-400" : "text-md text-gray-500 font-semibold hover:bg-gray-300 rounded-lg"
+    <div className="fixed z-50 top-0 w-full bg-gray-100">
+      {width > 800 ? (
+        <div className="flex justify-between px-2 py-4">
+          <div className="flex w-1/2 justify-around text-lg xl:text-2xl">
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-blue-400 font-semibold "
+                  : "text-md text-gray-500 font-semibold rounded-lg"
               }
-              >
+            >
+              <span className="hover:after:w-full after:block after:w-0 after:h-[2px] after:bg-blue-400 after:transition-all after:duration-300 after:ease-in-out">
                 Home
-              </NavLink>
-              <NavLink 
-                to="/home"
-                className={({ isActive }) =>
-                 isActive ? "text-blue-400" : "text-md text-gray-500 font-semibold hover:bg-gray-300 rounded-lg"
+              </span>
+            </NavLink>
+            <NavLink
+              to="/home"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-blue-400 font-semibold "
+                  : "text-md text-gray-500 font-semibold  rounded-lg"
               }
-                
-              >
+            >
+             <span className="hover:after:w-full after:block after:w-0 after:h-[2px] after:bg-blue-400 after:transition-all after:duration-300 after:ease-in-out">
                 About
-              </NavLink>
-              <NavLink 
-                to="/tech"
-                className={({ isActive }) =>
-                 isActive ? "text-blue-400" : "text-md text-gray-500 font-semibold hover:bg-gray-300 rounded-lg"
+              </span>
+            </NavLink>
+            <NavLink
+              to="/tech"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-blue-400 font-semibold "
+                  : "text-md text-gray-500 font-semibold  rounded-lg"
               }
-              >
-                TechStack
-              </NavLink>
-              <NavLink 
-                to="/project"
-                className={({ isActive }) =>
-                 isActive ? "text-blue-400" : "text-md text-gray-500 font-semibold hover:bg-gray-300 rounded-lg"
+            >
+            <span className="hover:after:w-full after:block after:w-0 after:h-[2px] after:bg-blue-400 after:transition-all after:duration-300 after:ease-in-out">
+              Tech Stack
+              </span>
+            </NavLink>
+            <NavLink
+              to="/project"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-blue-400 font-semibold "
+                  : "text-md text-gray-500 font-semibold  rounded-lg"
               }
-              >
+            >
+              <span className="hover:after:w-full after:block after:w-0 after:h-[2px] after:bg-blue-400 after:transition-all after:duration-300 after:ease-in-out">
                 Projects
-              </NavLink>
-              <NavLink 
-                to="/contact"
-                className={({ isActive }) =>
-                 isActive ? "text-blue-400" : "text-md text-gray-500 font-semibold hover:bg-gray-300 rounded-lg"
+              </span>
+            </NavLink>
+            <NavLink
+              to="/contact"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-blue-400 font-semibold "
+                  : "text-md text-gray-500 font-semibold  rounded-lg"
               }
-              >
-                Contact
-              </NavLink>
-            </div>
-
-            <div className="flex justify-end">
-              <div className="flex  gap-2 md:gap-5 lg:gap-10 p-1">
-                <div className="text-2xl">
-                  <a href="https://github.com/shrestharonit09">
-                    <FaGithub />
-                  </a>
-                </div>
-                <div className="text-2xl">
-                  <AiFillTwitterCircle />
-                </div>
-                <div className="text-2xl">
-                  <a href="https://www.linkedin.com/in/ronit-shrestha-9b0ab82b7/">
-                    <FaLinkedin />
-                  </a>
-                </div>
-              </div>
-            </div>
+            >
+             <span className="hover:after:w-full after:block after:w-0 after:h-[2px] after:bg-blue-400 after:transition-all after:duration-300 after:ease-in-out">
+               Contact
+              </span>
+            </NavLink>
           </div>
-        ) : (
-          <div className="p-5">
-            <Sidebar className="text-md" />
+          <div className="flex gap-4 xl:gap-8 text-2xl xl:text-3xl">
+            <a href="https://github.com/shrestharonit09">
+              <FaGithub />
+            </a>
+            <AiFillTwitterCircle />
+            <a href="https://www.linkedin.com/in/ronit-shrestha-9b0ab82b7/">
+              <FaLinkedin />
+            </a>
           </div>
-        )}
-      </div>
+        </div>
+      ) : (
+        <div className="p-5">
+          <Sidebar className="text-md" />
+        </div>
+      )}
+    </div>
   );
 };
 

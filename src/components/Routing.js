@@ -10,10 +10,10 @@ import Navbar from "./Navbar";
 
 const Routing = () => {
   return (
-    <div className="h-auto bg-gray-100 ">
+    <div className="h-screen bg-gray-100">
       <Router>
         <Navbar/>
-        <div className="mt-32 ">
+        <div>
         <Routes>
           <Route path="/" element={<Complete />}></Route>
           <Route path="/home" element={<Home />}></Route>
