@@ -18,7 +18,7 @@ const Card = (props) => {
           </div>
         </div>
 
-        <div className="bg-white rounded-b-lg shadow-lg flex flex-col gap-3 py-2 px-1 text-sm sm:text-md overflow-auto">
+        <div className="bg-white rounded-b-lg shadow-lg flex flex-col gap-3 py-2 px-1 text-xs overflow-auto">
           <div className="flex gap-1">
             <h1 className="font-semibold text-blue-950">Tech</h1>
             <h1 className="font-semibold text-blue-950">Stack</h1>

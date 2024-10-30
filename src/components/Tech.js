@@ -29,7 +29,7 @@ const Tech = () => {
   }, []);
   return (
     <div className="flex justify-center mt-12 py-8">
-      <div className="flex flex-col gap-16 lg:gap-32 w-[80vw]  ">
+      <div className="flex flex-col gap-16 lg:gap-24 w-[80vw]  ">
         <div>
           <div className="flex flex-col gap-5 ">
             <div className="flex justify-center">
